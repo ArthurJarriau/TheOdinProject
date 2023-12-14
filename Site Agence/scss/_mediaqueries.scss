@@ -1,0 +1,13 @@
+@media screen and (min-width:768px) {
+    
+
+    .agence{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        &__text, &__image{
+            width: 30vw;
+        }
+    }
+}

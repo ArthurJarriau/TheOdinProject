@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Regles generales */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  /* 14px par défaut */
+  /*font-family: 'Noto sans', sans-serif;*/
+}
+
+a,
+a:hover,
+a:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  /*alignement correct des images*/
+}
+
+.opacity {
+  color: rgba(200, 200, 200, 0.5);
+}
+
+.header {
+  background-image: url(../img/HeaderImage2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+.header__title {
+  font-family: "PPFragment", sans-serif;
+  font-size: 4.2rem;
+  text-align: center;
+  padding-top: 20vh;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.header__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  height: 10vh;
+  align-items: center;
+}
+.header__link a:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: "PPFragment";
+  src: url(‘/fonts/PPFragment-GlareRegular.woff2’) format(‘woff2’);
+  font-family: "PPFraktion";
+  src: url(‘/fonts/PPFraktionSans-Variable.woff2’) format(‘woff2’);
+}
+.agence {
+  padding: 10vw;
+}
+.agence__title {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+.agence__description {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.agence__image {
+  margin-top: 2rem;
+  display: block;
+}
+
+.equipage {
+  background-color: #000000;
+  padding: 10vw;
+}
+.equipage__title {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-align: right;
+  color: #FFFFFF;
+  padding-bottom: 2rem;
+}
+.equipage__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  gap: 15vw;
+}
+
+/* Card Equipage */
+.card {
+  background-color: #232323;
+  border: 1px solid #B6FFF5;
+  width: 30vw;
+}
+.card__title {
+  color: #FFFFFF;
+}
+.card__description {
+  color: #FFFFFF;
+}
+.card:hover {
+  background-color: #B6FFF5;
+}
+.card:hover__title {
+  color: #232323;
+}
+.card:hover__description {
+  color: #232323;
+}
+
+.projets {
+  background-color: #000000;
+  padding: 10vw;
+}
+.projets__title {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.projets__links {
+  margin-block: 2rem;
+  border-top: #B6FFF5 1px solid;
+  border-bottom: #B6FFF5 1px solid;
+}
+.projets__link {
+  border-left: #B6FFF5 1px solid;
+  border-right: #B6FFF5 1px solid;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+  border-bottom: #B6FFF5 1px solid;
+  color: #FFFFFF;
+}
+.projets__link:last-child {
+  border-bottom: none;
+}
+.projets__link:hover {
+  background-color: #B6FFF5;
+}
+.projets__link:hover a {
+  color: black;
+}
+
+.contact {
+  background-image: url(../img/contact_bg.png);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.contact__link {
+  background: #3B3B3B;
+  padding: 1.6rem 2.4rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .agence {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .agence__text, .agence__image {
+    width: 30vw;
+  }
+}/*# sourceMappingURL=main.css.map */

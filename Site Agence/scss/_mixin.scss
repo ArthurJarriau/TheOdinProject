@@ -1,0 +1,8 @@
+
+@mixin title{
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+@mixin padding($padding : 10vw){
+    padding: $padding;
+}

@@ -1,0 +1,16 @@
+.contact{
+    background-image: url(../img/contact_bg.png);
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    &__link{
+        background: #3B3B3B;
+        padding: 1.6rem 2.4rem;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
